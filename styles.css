@@ -1,0 +1,72 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #c0f0f7;
+    color: #333;
+    line-height: 1.6;
+    display: flex;               /* Use Flexbox */
+    flex-direction: column;      /* Arrange children (header, content, footer) in a column */
+    height: 100vh;               /* Full viewport height */
+}
+
+header {
+    background-color: #014d86;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    flex-grow: 1; /* Allows sections to grow and fill the available space */
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #014d86;
+}
+
+section p, section ul {
+    font-size: 1.1rem;
+}
+
+img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #014d86;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom of the page */
+}
